@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./styles.scss";
 
 export default function Calculator() {
@@ -89,65 +88,65 @@ export default function Calculator() {
   };
 
   return (
-    <div className="calculator">
-      <div className="displayCalc">
-        {" "}
-        {/* <span className="calc">{clickToDisplay()}</span> */} <span id="display"> {currentVal} </span>{" "}
-      </div>{" "}
-      <div className="main">
-        <div id="clear" onClick={() => setCurrentVal(0)}>
-          AC{" "}
-        </div>{" "}
-        <div id="divide" onClick={(e) => clickToDisplay(e)}>
-          /{" "}
-        </div>{" "}
-        <div id="multiply" onClick={(e) => clickToDisplay(e)}>
-          *
-        </div>{" "}
-        <div id="seven" onClick={(e) => clickToDisplay(e)}>
-          7{" "}
-        </div>{" "}
-        <div id="eight" onClick={(e) => clickToDisplay(e)}>
-          8{" "}
-        </div>{" "}
-        <div id="nine" onClick={(e) => clickToDisplay(e)}>
-          9{" "}
-        </div>{" "}
-        <div id="subtract" onClick={(e) => clickToDisplay(e)}>
-          -
-        </div>{" "}
-        <div id="four" onClick={(e) => clickToDisplay(e)}>
-          4{" "}
-        </div>{" "}
-        <div id="five" onClick={(e) => clickToDisplay(e)}>
-          5{" "}
-        </div>{" "}
-        <div id="six" onClick={(e) => clickToDisplay(e)}>
-          6{" "}
-        </div>{" "}
-        <div id="add" onClick={(e) => clickToDisplay(e)}>
-          +
-        </div>{" "}
-        <div id="one" onClick={(e) => clickToDisplay(e)}>
-          1{" "}
-        </div>{" "}
-        <div id="two" onClick={(e) => clickToDisplay(e)}>
-          2{" "}
-        </div>{" "}
-        <div id="three" onClick={(e) => clickToDisplay(e)}>
-          3{" "}
-        </div>{" "}
-        <div id="equals" onClick={() => showResult()}>
-          {" "}
-          ={" "}
-        </div>{" "}
-        <div id="zero" onClick={(e) => clickToDisplay(e)}>
-          0{" "}
-        </div>{" "}
-        <div id="decimal" onClick={(e) => clickToDisplay(e)}>
-          .{" "}
-        </div>{" "}
-      </div>{" "}
+    <div className="calculator_container">
+      <div className="calculator">
+        <div className="displayCalc">
+          <span id="display"> {currentVal} </span>
+        </div>
+        <div className="main">
+          <div id="clear" onClick={() => setCurrentVal(0)}>
+            AC
+          </div>
+          <div id="divide" onClick={(e) => clickToDisplay(e)}>
+            /
+          </div>
+          <div id="multiply" onClick={(e) => clickToDisplay(e)}>
+            *
+          </div>
+          <div id="seven" onClick={(e) => clickToDisplay(e)}>
+            7
+          </div>
+          <div id="eight" onClick={(e) => clickToDisplay(e)}>
+            8
+          </div>
+          <div id="nine" onClick={(e) => clickToDisplay(e)}>
+            9
+          </div>
+          <div id="subtract" onClick={(e) => clickToDisplay(e)}>
+            -
+          </div>
+          <div id="four" onClick={(e) => clickToDisplay(e)}>
+            4
+          </div>
+          <div id="five" onClick={(e) => clickToDisplay(e)}>
+            5
+          </div>
+          <div id="six" onClick={(e) => clickToDisplay(e)}>
+            6
+          </div>
+          <div id="add" onClick={(e) => clickToDisplay(e)}>
+            +
+          </div>
+          <div id="one" onClick={(e) => clickToDisplay(e)}>
+            1
+          </div>
+          <div id="two" onClick={(e) => clickToDisplay(e)}>
+            2
+          </div>
+          <div id="three" onClick={(e) => clickToDisplay(e)}>
+            3
+          </div>
+          <div id="equals" onClick={() => showResult()}>
+            =
+          </div>
+          <div id="zero" onClick={(e) => clickToDisplay(e)}>
+            0
+          </div>
+          <div id="decimal" onClick={(e) => clickToDisplay(e)}>
+            .
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
